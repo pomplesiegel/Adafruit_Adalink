@@ -143,7 +143,7 @@ class ATSAMD21G18(Core):
         """
         if programmer == 'jlink':
             return JLink('Cortex-M0 r0p1, Little endian',
-                         params='-device ATSAMD21G18 -if swd -speed 1000')
+                         params='-device ATSAMD21G18 -if swd -speed 100')
         elif programmer == 'stlink':
             return STLink_ATSAMD21G18()
         elif programmer == 'raspi2':
